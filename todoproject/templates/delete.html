@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <h1 class="task-delete">Are you sure You completed this task</h1>
+    <button class="btn btn-danger" style="margin-left: 583px; margin-top: 19px;">confirm</button>
+
+</form>
+
+{% endblock %}
